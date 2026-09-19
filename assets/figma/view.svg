@@ -1,0 +1,37 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  #view {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: blink 6.4s ease-in-out infinite;
+  }
+
+  #Vector_2 {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: look-around 5.2s ease-in-out infinite;
+  }
+
+  @keyframes blink {
+    0%, 40%, 44%, 72%, 76%, 100% { transform: scaleY(1); }
+    42%, 74% { transform: scaleY(0.08); }
+  }
+
+  @keyframes look-around {
+    0%, 14%, 46%, 100% { transform: translateX(0); }
+    22%, 34% { transform: translateX(-4px); }
+    58%, 76% { transform: translateX(4px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #view,
+    #Vector_2 {
+      animation: none;
+    }
+  }
+</style>
+<g id="view">
+<path id="Vector" d="M48.474 24.8513C49.158 25.8104 49.5 26.2901 49.5 27C49.5 27.7099 49.158 28.1896 48.474 29.1487C45.4003 33.4588 37.5507 42.75 27 42.75C16.4493 42.75 8.59972 33.4588 5.52609 29.1487C4.84202 28.1896 4.5 27.7099 4.5 27C4.5 26.2901 4.84202 25.8104 5.52609 24.8513C8.59972 20.5412 16.4493 11.25 27 11.25C37.5507 11.25 45.4003 20.5412 48.474 24.8513Z" stroke="#C8C8C8" stroke-width="1.5"/>
+<path id="Vector_2" d="M33.75 27C33.75 23.272 30.728 20.25 27 20.25C23.272 20.25 20.25 23.272 20.25 27C20.25 30.728 23.272 33.75 27 33.75C30.728 33.75 33.75 30.728 33.75 27Z" stroke="#C8C8C8" stroke-width="1.5"/>
+</g>
+</svg>
